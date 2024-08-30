@@ -1,9 +1,12 @@
 
 import React from 'react'
 
-export default function Home() {
+export default function Home({categories}) {
   return (
-    <div>Home</div>
+
+    <div>
+        {categories.map(item => (<h1>{item.name}</h1>))} 
+    </div>
   )
 }
 
