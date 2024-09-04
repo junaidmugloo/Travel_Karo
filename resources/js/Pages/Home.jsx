@@ -134,7 +134,7 @@ export default function Home({ categories }) {
       </button>
     </div>
 
-{/* 
+
             <h4>Form Status: {processing ? "Submitting..." : "Ready"}</h4>
             <form onSubmit={onSubmitHandler}>
                 <input
@@ -155,7 +155,7 @@ export default function Home({ categories }) {
                     </button>
                 </div>
             ))}
-         */}
+        
         </>
     );
 }
