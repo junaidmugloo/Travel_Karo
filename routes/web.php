@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
-
+use Inertia\Inertia;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,3 +15,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomeController::class, 'index']);
+Route::post('/category', [HomeController::class, 'store']);
+Route::delete('/category/{id}', [HomeController::class, 'destroy']);
+
+route::get('/login',function(){
+    return Inertia::render('Login');
+})->name('login');

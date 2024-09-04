@@ -1,0 +1,26 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-28bc52c1.css",
+    "isEntry": true,
+    "src": "resources/css/app.css"
+  },
+  "resources/images/kashmir.jpg": {
+    "file": "assets/kashmir-a69cf0bf.jpg",
+    "src": "resources/images/kashmir.jpg"
+  },
+  "resources/js/app.css": {
+    "file": "assets/app-adb2e803.css",
+    "src": "resources/js/app.css"
+  },
+  "resources/js/app.jsx": {
+    "assets": [
+      "assets/kashmir-a69cf0bf.jpg"
+    ],
+    "css": [
+      "assets/app-adb2e803.css"
+    ],
+    "file": "assets/app-4f38428b.js",
+    "isEntry": true,
+    "src": "resources/js/app.jsx"
+  }
+}

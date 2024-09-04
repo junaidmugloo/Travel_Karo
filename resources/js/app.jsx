@@ -1,13 +1,15 @@
 import './bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.min.js';
 import { createInertiaApp } from '@inertiajs/inertia-react';
 import { createRoot } from 'react-dom/client';
-// import Nav from './Layouts/Nav';
+import Nav from './Layouts/Nav';
 
 createInertiaApp({
   resolve: name => {
     const pages = import.meta.glob('./Pages/**/*.jsx', { eager: true })
     let page= pages[`./Pages/${name}.jsx`]
-    // page.default.layout =  page.default.layout || (( page)=><Nav children={page} />)
+    page.default.layout =  page.default.layout || (( page)=><Nav children={page} />)
    return page;
   },
   setup({ el, App, props }) {
