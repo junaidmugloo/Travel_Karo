@@ -2,6 +2,8 @@ import { useForm } from '@inertiajs/inertia-react'; // Make sure this is correct
 import React from 'react';
 import kashmirImage from '../../images/kashmir.jpg';
 export default function Home({ categories }) {
+  console.log(categories);
+  
     const { data, setData, post, processing, errors, reset } = useForm({
         name: ''
     });
@@ -134,6 +136,7 @@ export default function Home({ categories }) {
       </button>
     </div>
 
+    <div className='bg-dark'>
 
             <h4>Form Status: {processing ? "Submitting..." : "Ready"}</h4>
             <form onSubmit={onSubmitHandler}>
@@ -155,7 +158,7 @@ export default function Home({ categories }) {
                     </button>
                 </div>
             ))}
-        
+        </div>
         </>
     );
 }
