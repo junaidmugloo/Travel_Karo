@@ -48,7 +48,7 @@ return [
 
         'mongodb' => [
         'driver' => 'mongodb',
-        'dsn' => env('DB_URI', 'mongodb://localhost:27017'),
+        'dsn' => 'mongodb+srv://kashtech:Hacker123@cluster0.nukffnr.mongodb.net/travel_karo',
         'database' => 'travel_karo',
         ],
 
